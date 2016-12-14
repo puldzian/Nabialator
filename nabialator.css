@@ -6,7 +6,17 @@ html {height:100%;} body {height:100%;line-height:1;} ol, ul {list-style: none;}
     top:0px;
 }
 #generator {
-    font-size:10px;
+    color:white;
+    display:block;
+    font-family:sans;
+    font-style: italic;
+    font-size:60px;
+    font-weight:bold;
+    width:600px;
+    left:100px;
+    position:absolute;
+    text-transform: uppercase;
+    top:100px;
 }
 #img1, #img2, #img3 {
     background-size: contain;
