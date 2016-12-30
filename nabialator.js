@@ -5,19 +5,25 @@ var status = "nie mam jeszcze statusu",
     naczym = ["na tapczanie", "na klawiaturze", "na wersalce", "na kutasie", "na kontenerze", "na lotnisku krakuw balice", "na umowie cywilnej", "na umowie o dzieuo", "na notatniku", "na papierosku", "na gugle mapsie", "na serwerze pocztowym", "na bazie teleadresowej", "na telefonie", "na wysypisku odpaduw", "na odpierdol", "na taśmie do produkcji", "na kościelnej ławie", "na wybrzerzu helskim", "na wybrzerzu gdanskim niedaleko stoczni", "na kursorze w komputerze", "na pasku zadań", "na wczasach", "na kursie java skryptu", "na zajenciach z polonistyki", "na dyskotece fajnej", "na śmiesznej herbacie", "na wysypisku guwna", "na urlopie wypoczynkowym", "na wyjściu do sklepu", "na podkładce pod myszke", "na telewizorze", "na fotelu", "na lerzaku", "na antresoli", "na mieście", "na rybach", "na jajcach", "na niczym ciekawym", "na koniu jadąc", "na pokładzie samolotu", "na worku złota", "na kocim grzbiecie", "na ikonie muj komputer", "na koncercie", "na wycieczce", "na piwku", "na wylocie", "na krześle", "na żarty", "na temblaku", "na posterunku", "na komendzie policji"],
     jakco = ["jak jakiś skrót", "jak galareta", "jak jakiś chuj", "jak jakaś ryba", "jak jakieś jajo", "jak jakaś herbata czarna", "jak jakiś kalkulator", "jak dziki pies", "jak jakiś bobas", "jak kurczak", "jak pan policjant", "jak cienrzaruwka na granicy", "jak jakiś piwosz", "jak jakiś suoik", "jak nie wiem co", "jak jakiś debil", "jak kursor na folderze", "jak mikroprocesor", "jak bezrobotny", "jak jakiś glut", "jakoś ostatkiem sił", "jak puszka piwa", "jak jakiś napis albo obrazek", "jak okrent morski", "jak zimna fala loduwki", "jak ciepua fala kuchenki", "jak jakaś picca", "jak kebab", "jak jakiś jubilat", "jak pieczywo w torbie", "jak trujoncy grzyb", "jak niebezpieczny wonrz", "jak donald tramp", "jak stary anona", "jak jan papiesz", "jak ciepły papierosek", "jak smaczny obiad", "jak pan lis", "jak byle co", "jak ciapaja", "jak rarug", "jak szafeczka", "jak jakiś interfejs", "jak android", "jak jakaś pani w sklepie", "jak pieniondz w portfelu"],
     nazywamsie = ["moja godność to", "mam na imie", "nazywam sie", "posuchaj ja nazywam sie", "muj gatunek to", "ten awatar nazywa sie", "moja klasa obiektu to", "dzieci muwiom rze jestem", "w dowodzie mam wpisane", "muwiom do mnie", "moja nazwa usługi to", "moja data warzności to", "nazwa tego pliku", "karzdy katolik to", "godność moja to", "moje imie i nazwisko brzmi", "moja nazwa to", "moja domena to", "moja marka to", "muj znak firmowy to", "muj adres emajl to", "nazywam sie", "ja nazywam sie", "muw do mnie", "ja nazywam sie", "mam na nazwisko", "muj adres to"],
-    nazwa = ["ciapaja", "cichy nabiau", "guwno", "karabinek", "jeremiasz", "ojciec jeremiasz", "mieszadełko", "pozdrowionka", "ściskacz", "telefon sony xperia", "karta pamięci", "ciągniczek", "ciepła zupka i zimne spodnie", "sopel lodu", "uty do tańca", "kolorowy balonik", "piotrek", "leszek", "uukasz", "kinga", "agnieszka", "julka", "wojtek", "chlebek", "smutny chlebek", "bułeczka z serkiem", "traktorek", "korporacja finansowa", "polska firma", "platforma android", "bluza z kapturem", "elektroodpady", "robinson krauze", "zakuad ubezpieczeń", "wampir", "urzytkownik fejsbuka", "adresat poczty", "nadawca przesyłki", "rower gurski", "zły pies", "zwionzek radziecki", "karabin maszynowy", "katolik polski", "stary gajowy", "twuj komputer", "moja mama", "fasola czerwona", "czekoladka", "cukiereczek", "siusiaczek", "dupeczka", "okienko", "miska z ryrzem", "ruski agent", "plastusiowy pamientnik", "nasza klasa", "piosenkarz polski", "kobieta pracujonca", "systemowy buond", "piotrek pucieniczak", "krul polski", "wioleta wilas", "statusiarz jeden", "poszukiwany bandyta", "niebezpieczny pajonk", "głodna osa"],
+    nazwa = ["ciapaja", "cichy nabiau", "guwno", "karabinek", "jeremiasz", "ojciec jeremiasz", "mieszadełko", "pozdrowionka", "ściskacz", "telefon sony xperia", "karta pamięci", "ciągniczek", "ciepła zupka i zimne spodnie", "sopel lodu", "buty do tańca", "kolorowy balonik", "piotrek", "leszek", "uukasz", "kinga", "agnieszka", "julka", "wojtek", "chlebek", "smutny chlebek", "bułeczka z serkiem", "traktorek", "korporacja finansowa", "polska firma", "platforma android", "bluza z kapturem", "elektroodpady", "robinson krauze", "zakuad ubezpieczeń", "wampir", "urzytkownik fejsbuka", "adresat poczty", "nadawca przesyłki", "rower gurski", "zły pies", "zwionzek radziecki", "karabin maszynowy", "katolik polski", "stary gajowy", "twuj komputer", "moja mama", "fasola czerwona", "czekoladka", "cukiereczek", "siusiaczek", "dupeczka", "okienko", "miska z ryrzem", "ruski agent", "plastusiowy pamientnik", "nasza klasa", "piosenkarz polski", "kobieta pracujonca", "systemowy buond", "piotrek pucieniczak", "krul polski", "wioleta wilas", "statusiarz jeden", "poszukiwany bandyta", "niebezpieczny pajonk", "głodna osa"],
     wczym = ["w majonezie", "w sklepie sporzywczym", "w dupie", "w korytarzu", "w budce wikinga", "w ziemniaku", "w garnku ziemniakuw", "w ponurej okolicy", "w czasie", "w egipskim kurorcie", "w rosji putinoskiej", "w twojej guowie", "w twoim domu", "w morzu bałtyckim", "u adama i martyny", "w krakowie", "w bibliotece naukowej", "w przychodni lekarskiej", "w chlewie jakimś", "w samolocie do polski", "w pociongu osobowym", "w niczym", "w kosmosie", "w obozie uchodzcuw", "w samochodzie", "w tajdze", "w lesie", "w gradiencie", "w galeri sztuki", "w ciemnej ulicy", "w wojewudztwie pomorskim", "w kopalni głemboko", "w pamienci ram komputera", "w ksionrzce do historii", "w ramach prawa", "w przestrzeni", "w jenzyku polskim", "w podrurzy", "w trakcie antraktu", "w czasie koncertu", "w czystym łurzku", "w łurzku z tobom", "w dawnej stolicy", "w czasie suszy", "w moim pokoju"],
     jestem = ["przebywam obecnie", "spendzam czas", "jestem zameldowany", "zaznaczam okienko", "zarzywam urlopu", "mieszkam", "jem obiady", "buduje domek", "szczelam z pistoletu", "mam zameldowanie", "mam zgode na pobyt", "mam adres", "mam adres zameldowania", "mam zezwolenie na pobyt", "mam karte mieszkańca", "mam mieszkanie", "przebywam obecnie", "jestem teras", "jestem", "rzyje", "rzyje i mam sie dobrze", "przebywam teraz", "odbywam wyrok", "egzystuje"],
     czesc = ["cześć", "witam ciepło", "witam serdecznie", "dzień dobry", "dobry wieczur", "prosze zapraszam", "dobry dzień", "szanowni goście", "cześć witajcie", "witam", "jak sie macie", "no cześć", "hej", "no witam", "witam tutaj", "prosze siadać", "no hejka", "halo", "dzien dobry", "hej hej", "halo kolego"],
     duch = ["duch", "grzyb", "obywatel", "przedmiot", "komputer", "utwur", "teledysk", "garnek", "talerz", "prezydent", "akumulator", "tablet", "kontomierz", "malarz", "pistolet", "magiczny garnek", "kalafior", "bigos", "alkomat", "policjant", "rzołnierz", "literat", "proboszcz", "inspektor", "owoc", "katamaran", "kapelusz"],
     ziemia = ["ziemi", "zupy", "kanapy", "maupy", "planety", "krainy", "gminy", "pościeli", "okolicy", "choinki", "stonogi", "wanny", "ściany", "brody", "rzyletki", "tragedii", "aplikacji", "fortuny", "miejscowości", "osady", "dzielnicy", "potrawy", "kapusty", "obory", "wsi", "wioski", "ulicy", "przestrzeni", "doliny", "fabryki", "klasyki", "rzeki", "baterii", "kopalni", "publiczności", "ciamajdy", "podrurzy", "wycieczki", "nocy"],
-    pigulka = ["pigułke", "kanapke", "tabletke", "globulke", "kreseczke", "strzykawke", "truskawke", "kapuste", "zupke", "drugie danie", "zielone", "piwo"],
+    pigulka = ["pigułke", "kanapke", "tabletke", "globulke", "kreseczke", "strzykawke", "truskawke", "kapuste", "zupke", "drugie danie", "zielone", "piwo", "kutasa"],
     osobo = ["osobo", "kobieto", "menszczyzno", "głowo", "piesku", "kotku", "chomiczku", "jaszczurko", "wampirze", "piesko", "kocia mamo", "dziewucho", "dziewczyno", "lizaku", "wariacie", "wariatko", "petardo", "chorobo", "piotrek", "alicjo", "kolerzanko", "kolego", "ziomku", "koleszko", "humanistko", "filozofie", "panie doktorze", "pani dokturowa"],
-    swiat = ["ych świont", "ego nowego roku", "ych rodzinnych świont", "ych imienin", "ych urodzin", "ego roku 2014", "ego roku 2017", "ych świont borzego narodzenia", "ego świenta hanuka", "ego ramadanu", "ych urodzin twoich", "ego nowego roku", "ych dorzynek", "ych wyboruw prezydenckich", "ego jajeczka", "ego dyngusa", "ych jajkuw", "ych kaloryferuw"],
+    swiat = ["ych świont", "ego nowego roku", "ych rodzinnych świont", "ych imienin", "ych urodzin", "ego roku 2014", "ego roku 2017", "ych świont borzego narodzenia", "ego świenta hanuka", "ego ramadanu", "ego dnia ojca", "ego nowego roku", "ych dorzynek", "ych wyboruw prezydenckich", "ego jajeczka", "ego dyngusa", "ych jajkuw", "ych kaloryferuw", "ego dnia mamy", "ego dnia babci", "ego dnia dziatka", "ego dnia polaka", "ych zakupuw w sklepie", "ego pobytu w toalecie"],
     wesolych = ["wesoł", "ciepł", "rodzinn", "udan", "szczenśliw", "zdrow", "urocz", "bardzo fajn", "mił", "zabawn", "fajn"],
     pocaluj = ["pocałuj", "polirz", "posmyraj", "pocauuj", "pouaskocz", "kopnij", "posmakuj", "jebnij", "klepnij", "ugryź", "kliknij", "posmaruj", "posmyraj", "pocałuj", "pokonaj", "dotknij"],
     mnie = ["mnie", "sie", "jom", "go", "siebie", "czuowieka", "chuopaka", "dziewczyne"],
-    wdupe = ["w dupe", "w brzuch", "w głowe", "w renke", "w noge", "w oko", "w ucho", "w odbytnice", "w odbyt", "w wontrobe", "w kiszke", "we włosy"];
+    wdupe = ["w dupe", "w brzuch", "w głowe", "w renke", "w noge", "w oko", "w ucho", "w odbytnice", "w odbyt", "w wontrobe", "w kiszke", "we włosy"],
+    zyczeci = ["rzycze ci", "rzycze tobie"],
+    wez = ["weź", "zjedz", "daj", "podaj", "oddaj", "utnij mi"],
+    jedzenie = ["zupa", "drugie danie", "kapusta", "rosuł", "bigos", "sernik", "makowiec", "kotlet schabowy", "ziemniaki", "sałatka kolesuaw", "pierogi ruskie", "pierogi ze serem", "krupnik", "kapuśniak", "kremuwka", "wuzetka", "herbatniki", "kotlet mielony", "flaki", "kieubasa", "ciasto francuskie", "ponczki", "drorzdżuwka", "groch z kapustom", "grochuwka", "zupa fasolowa", "suszi", "śledzik w occie", "wegańskie suszi", "burger sojowy", "hamburger", "sałatka cezara", "kurczak pieczony", "kluski ślonskie", "kopytka", "ryż", "sajgonki", "frytki", "lody waniliowe", "frytki belgijskie", "frytki polskie", "tabletka na bul guowy", "kotlet mielony", "zrazy wouowe", "zawijany ser", "serdel", "paruwka sojowa", "kanapka z pomidorem", "czipsy solone", "czipsy paprykowe", "czekolada", "bita śmietana", "eskalopki", "galareta", "karp", "pstrong z grila", "tofu z warzywami", "zupka chińska", "zupka ser w ziołach", "zapiekanka", "zupa jarzynowa", "zupa warzywna", "zupa gospodarcza", "krem z dyni", "kotleciki sojowe", "pulpety w sosie", "szproty podwendzane", "makrela wendzona", "herbata z cytrynom", "kawa z mlekiem", "paluszki rybne", "filet z ryby", "filet z kurczaka", "bułka", "chlebuś z masłem", "suchy chlebuś", "kanapka ze serem", "kanapka z pasztetem", "paszteciki", "barszcz czerwony", "barszcz biały", "rzur", "ramen z jajkiem", "jajecznica", "jajko sadzone", "krupnik", "japko", "kimczi", "kurczak w sezamie", "kasza gryczana", "kasza jaglana", "kuskus", "serek wiejski", "jogurt", "herbata owocowa"],
+    potrawe = ["śniadanie", "obiat", "kolacje", "potwieczorek", "deser", "lancz", "brancz", "drugie śniadanie", "wieczerze",],
+    dzisiaj = ["dzisiaj", "jutro", "pojutrze", "popojutrze", "w poniedziauek", "we wtorek", "w sirode", "we czwartek", "w piontek", "w sobote", "w niedziele", "kiedyś"],
+    zjem = ["zjem", "poukne", "włorze sobie do gemby", "zjedz", "pouknij", "wysraj", "ugotuj", "usmarz", "ugotuj", "zjedz", "zaraz zjem", "usmarze", "ugotuje", "zjem"];
 
 var losujCos = function (n) {
         return Math.floor(Math.random() * (n));
@@ -209,8 +215,20 @@ var generator = function () {
         losmnie = losujCos(mnieMax),
         wdupeMax = wdupe.length,
         loswdupe = losujCos(wdupeMax),
+        zyczeciMax = zyczeci.length,
+        loszyczeci = losujCos(zyczeciMax),
+        wezMax = wez.length,
+        loswez = losujCos(wezMax),
+        jedzenieMax = jedzenie.length,
+        losjedzenie = losujCos(jedzenieMax),
+        potraweMax = potrawe.length,
+        lospotrawe = losujCos(potraweMax),
+        dzisiajMax = dzisiaj.length,
+        losdzisiaj = losujCos(dzisiajMax),
+        zjemMax = zjem.length,
+        loszjem = losujCos(zjemMax),
         // losuj z liczby case'ów - 1
-        coBedzie = losujCos(16);
+        coBedzie = losujCos(21);
     switch (coBedzie) {
     case 0:
         status = robie[losrobie] + " " + jakco[losjakco];
@@ -237,10 +255,10 @@ var generator = function () {
         status = czesc[losczesc] + " " + osobo[lososobo];
         break;
         case 8:
-        status = "weź " + pigulka[lospigulka];
+        status = wez[loswez] + " " + pigulka[lospigulka];
         break;
         case 9:
-        status = "zjedz " + pigulka[lospigulka];
+        status = nazywamsie[losnazywamsie] + " " + duch[losduch]];
         break;
         case 10:
         status = czesc[losczesc];
@@ -263,13 +281,25 @@ var generator = function () {
         case 16:
         status = pocaluj[lospocaluj] + " " + mnie[losmnie] + " " + wdupe[loswdupe] + " " + osobo[lososobo];
         break;
+        case 17:
+        status = zyczeci[loszyczeci] + " " + wesolych[loswesolych] + swiat[losswiat];
+        break;
+        case 18:
+        status = "na" + " " + potrawe[lospotrawe] + " " + dzisiaj[losdzisiaj] + " " + jedzenie[losjedzenie];
+        break;
+        case 19:
+        status = zjem[loszjem] + " " + jedzenie[losjedzenie] + " na "+ potrawe[lospotrawe] + " " + jakco[losjakco];
+        break;
+        case 20:
+        status = zjem[loszjem] + " " + jedzenie[losjedzenie] + ", " + jedzenie[losjedzenie] + " i " + jedzenie[losjedzenie];
+        break;
     }
     $("#generator").html(status);
 };
 
 // powiedz
 var powiedz = function (status) {
-    meSpeak.speak(status, {speed: 150});
+    meSpeak.speak(status, {speed: 130});
 }
 
 // funcja główna
@@ -288,7 +318,7 @@ var nabialator = function () {
         powiedz(status);
         // setTimeout(powiedz, 1000);
         // zacznij od nowa
-        setTimeout(nabialator, 5000);
+        setTimeout(nabialator, 4500);
     };
 
 $(document).ready(function () {
