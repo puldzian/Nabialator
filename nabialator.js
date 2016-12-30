@@ -9,8 +9,10 @@ var status = "nie mam jeszcze statusu",
     wczym = ["w majonezie", "w sklepie sporzywczym", "w dupie", "w korytarzu", "w budce wikinga", "w ziemniaku", "w garnku ziemniakuw", "w ponurej okolicy", "w czasie", "w egipskim kurorcie", "w rosji putinoskiej", "w twojej guowie", "w twoim domu", "w morzu bałtyckim", "u adama i martyny", "w krakowie", "w bibliotece naukowej", "w przychodni lekarskiej", "w chlewie jakimś", "w samolocie do polski", "w pociongu osobowym", "w niczym", "w kosmosie", "w obozie uchodzcuw", "w samochodzie", "w tajdze", "w lesie", "w gradiencie", "w galeri sztuki", "w ciemnej ulicy", "w wojewudztwie pomorskim", "w kopalni głemboko", "w pamienci ram komputera", "w ksionrzce do historii", "w ramach prawa", "w przestrzeni", "w jenzyku polskim", "w podrurzy", "w trakcie antraktu", "w czasie koncertu", "w czystym łurzku", "w łurzku z tobom", "w dawnej stolicy", "w czasie suszy", "w moim pokoju"],
     jestem = ["przebywam obecnie", "spendzam czas", "jestem zameldowany", "zaznaczam okienko", "zarzywam urlopu", "mieszkam", "jem obiady", "buduje domek", "szczelam z pistoletu", "mam zameldowanie", "mam zgode na pobyt", "mam adres", "mam adres zameldowania", "mam zezwolenie na pobyt", "mam karte mieszkańca", "mam mieszkanie", "przebywam obecnie", "jestem teras", "jestem", "rzyje", "rzyje i mam sie dobrze", "przebywam teraz", "odbywam wyrok", "egzystuje"],
     czesc = ["cześć", "witam ciepło", "witam serdecznie", "dzień dobry", "dobry wieczur", "prosze zapraszam", "dobry dzień", "szanowni goście", "cześć witajcie", "witam", "jak sie macie", "no cześć", "hej", "no witam", "witam tutaj", "prosze siadać", "no hejka", "halo", "dzien dobry", "hej hej"],
-    duch = ["duch", "grzyb", "obywatel", "przedmiot", "komputer", "utwur", "teledysk", "garnek", "talerz", "prezydent", "akumulator", "tablet", "kontomierz", "malarz"],
-    ziemia = ["ziemi", "zupy", "kanapy", "maupy", "planety", "krainy", "gminy", "pościeli", "okolicy", "choinki", "stonogi", "wanny", "ściany", "brody", "rzyletki", "tragedii", "aplikacji", "fortuny", "miejscowości", "osady", "dzielnicy", "potrawy", "kapusty", "obory", "wsi", "wioski", "ulicy", "przestrzeni", "doliny", "fabryki", "klasyki", "rzeki", "baterii", "kopalni", "publiczności", "ciamajdy", "podrurzy", "wycieczki", "nocy"];
+    duch = ["duch", "grzyb", "obywatel", "przedmiot", "komputer", "utwur", "teledysk", "garnek", "talerz", "prezydent", "akumulator", "tablet", "kontomierz", "malarz", "pistolet", "magiczny garnek", "kalafior", "bigos", "alkomat", "policjant", "rzołnierz", "literat", "proboszcz", "inspektor", "owoc"],
+    ziemia = ["ziemi", "zupy", "kanapy", "maupy", "planety", "krainy", "gminy", "pościeli", "okolicy", "choinki", "stonogi", "wanny", "ściany", "brody", "rzyletki", "tragedii", "aplikacji", "fortuny", "miejscowości", "osady", "dzielnicy", "potrawy", "kapusty", "obory", "wsi", "wioski", "ulicy", "przestrzeni", "doliny", "fabryki", "klasyki", "rzeki", "baterii", "kopalni", "publiczności", "ciamajdy", "podrurzy", "wycieczki", "nocy"],
+    pigulka = ["pigułke", "kanapke", "tabletke", "globulke", "kreseczke", "strzykawke", "truskawke"],
+    osobo = ["osobo", "kobieto", "menszczyzno", "głowo", "piesku", "kotku", "chomiczku", "jaszczurko", "wampirze", "piesko", "kocia mamo", "dziewucho", "dziewczyno", "lizaku", "wariacie", "wariatko", "petardo", "chorobo", "piotrek", "alicja"];
 var losujCos = function (n) {
         return Math.floor(Math.random() * (n));
     };
@@ -187,6 +189,10 @@ var generator = function () {
         losduch = losujCos(duchMax),
         ziemiaMax = ziemia.length,
         losziemia = losujCos(ziemiaMax),
+        pigulkaMax = pigulka.length,
+        lospigulka = losujCos(pigulkaMax),
+        osoboMax = osobo.length,
+        lososobo = losujCos(osoboMax),
         // losuj z liczby case'ów - 1
         coBedzie = losujCos(7);
     switch (coBedzie) {
@@ -210,6 +216,24 @@ var generator = function () {
         break;
         case 6:
         status = "niech zstompi " + duch[losduch] + " twuj i odnowi oblicze tej " + ziemia[losziemia];
+        break;
+        case 7:
+        status = czesc[losczesc] + osobo[lososobo];
+        break;
+        case 8:
+        status = "weź " + pigulka[lospigulka];
+        break;
+        case 9:
+        status = "zjedz " + pigulka[lospigulka];
+        break;
+        case 10:
+        status = czesc[losczesc];
+        break;
+        case 11:
+        status = jestem[losjestem] + naczym[losnaczym];
+        break;
+        case 12:
+        status = "oto " + duch[losduch];
         break;
     }
     $("#generator").html(status);
