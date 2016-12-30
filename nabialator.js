@@ -8,8 +8,9 @@ var status = "nie mam jeszcze statusu",
     nazwa = ["ciapaja", "cichy nabiau", "guwno", "karabinek", "jeremiasz", "ojciec jeremiasz", "mieszadełko", "pozdrowionka", "ściskacz", "telefon sony xperia", "karta pamięci", "ciągniczek", "ciepła zupka i zimne spodnie", "sopel lodu", "uty do tańca", "kolorowy balonik", "piotrek", "leszek", "ukasz", "kinga", "agnieszka", "julka", "wojtek", "chlebek", "smutny chlebek", "bułeczka z serkiem", "traktorek", "korporacja finansowa", "polska firma", "platforma android", "bluza z kapturem", "elektroodpady", "robinson krauze", "zakuad ubezpieczeń", "wampir", "urzytkownik fejsbuka", "adresat poczty", "nadawca przesyłki", "rower gurski", "zły pies", "zwionzek radziecki", "karabin maszynowy", "katolik polski", "stary gajowy", "twuj komputer", "moja mama", "fasola czerwona", "czekoladka", "cukiereczek", "siusiaczek", "dupeczka", "okienko", "miska z ryrzem", "ruski agent", "plastusiowy pamientnik", "nasza klasa", "piosenkarz polski", "kobieta pracujonca", "systemowy buond", "piotrek pucieniczak", "krul polski", "wioleta wilas", "statusiarz jeden", "poszukiwany bandyta", "niebezpieczny pajonk", "głodna osa"],
     wczym = ["w majonezie", "w sklepie sporzywczym", "w dupie", "w korytarzu", "w budce wikinga", "w ziemniaku", "w garnku ziemniakuw", "w ponurej okolicy", "w czasie", "w egipskim kurorcie", "w rosji putinoskiej", "w twojej guowie", "w twoim domu", "w morzu bałtyckim", "u adama i martyny", "w krakowie", "w bibliotece naukowej", "w przychodni lekarskiej", "w chlewie jakimś", "w samolocie do polski", "w pociongu osobowym", "w niczym", "w kosmosie", "w obozie uchodzcuw", "w samochodzie", "w tajdze", "w lesie", "w gradiencie", "w galeri sztuki", "w ciemnej ulicy", "w wojewudztwie pomorskim", "w kopalni głemboko", "w pamienci ram komputera", "w ksionrzce do historii", "w ramach prawa", "w przestrzeni", "w jenzyku polskim", "w podrurzy", "w trakcie antraktu", "w czasie koncertu", "w czystym łurzku", "w łurzku z tobom", "w dawnej stolicy", "w czasie suszy", "w moim pokoju"],
     jestem = ["przebywam obecnie", "spendzam czas", "jestem zameldowany", "zaznaczam okienko", "zarzywam urlopu", "mieszkam", "jem obiady", "buduje domek", "szczelam z pistoletu", "mam zameldowanie", "mam zgode na pobyt", "mam adres", "mam adres zameldowania", "mam zezwolenie na pobyt", "mam karte mieszkańca", "mam mieszkanie", "przebywam obecnie", "jestem teras", "jestem", "rzyje", "rzyje i mam sie dobrze", "przebywam teraz", "odbywam wyrok", "egzystuje"],
-    czesc = ["cześć", "witam ciepło", "witam serdecznie", "dzień dobry", "dobry wieczur", "prosze zapraszam", "dobry dzień", "szanowni goście", "cześć witajcie", "witam", "jak sie macie", "no cześć", "hej", "no witam", "witam tutaj", "prosze siadać", "no hejka", "halo", "dzien dobry", "hej hej"];
-
+    czesc = ["cześć", "witam ciepło", "witam serdecznie", "dzień dobry", "dobry wieczur", "prosze zapraszam", "dobry dzień", "szanowni goście", "cześć witajcie", "witam", "jak sie macie", "no cześć", "hej", "no witam", "witam tutaj", "prosze siadać", "no hejka", "halo", "dzien dobry", "hej hej"],
+    duch = ["duch", "grzyb", "obywatel", "przedmiot", "komputer", "utwur", "teledysk", "garnek", "talerz", "prezydent", "akumulator", "tablet", "kontomierz", "malarz"],
+    ziemia = ["ziemi", "zupy", "kanapy", "maupy", "planety", "krainy", "gminy", "pościeli", "okolicy", "choinki", "stonogi", "wanny", "ściany", "brody", "rzyletki", "tragedii", "aplikacji", "fortuny", "miejscowości", "osady", "dzielnicy", "potrawy", "kapusty", "obory", "wsi", "wioski", "ulicy", "przestrzeni", "doliny", "fabryki", "klasyki", "rzeki", "baterii", "kopalni", "publiczności", "ciamajdy", "podrurzy", "wycieczki", "nocy"];
 var losujCos = function (n) {
         return Math.floor(Math.random() * (n));
     };
@@ -82,9 +83,12 @@ setInterval(updateGradient,10);
 // rozstawiacz obrazków
 var obrazki = function () {
     // numer = liczba obrazków w folderze +1
-    var numer1 = losujCos(12);
-    var numer2 = losujCos(12);
-    var numer3 = losujCos(12);
+    var ileTego = losujCos(6);
+    var numer1 = losujCos(184);
+    var numer2 = losujCos(184);
+    var numer3 = losujCos(184);
+    var numer4 = losujCos(184);
+    var numer5 = losujCos(184);
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0) - 400;
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 400;
     var ww = losujCos(w);
@@ -102,6 +106,61 @@ var obrazki = function () {
     document.getElementById("img3").style.bottom=hh;
     document.getElementById("img3").style.right=ww;
     document.getElementById("img3").style.backgroundImage="url(img/" + numer3 + ".png)";
+    var ww = losujCos(w);
+    var hh = losujCos(h);
+    document.getElementById("img4").style.bottom=hh;
+    document.getElementById("img4").style.right=ww;
+    document.getElementById("img4").style.backgroundImage="url(img/" + numer4 + ".png)";
+    var ww = losujCos(w);
+    var hh = losujCos(h);
+    document.getElementById("img5").style.bottom=hh;
+    document.getElementById("img5").style.right=ww;
+    document.getElementById("img5").style.backgroundImage="url(img/" + numer5 + ".png)";
+    ileTegoDawac = losujCos(6);
+    switch (ileTegoDawac) {
+      case(0):
+            document.getElementById("img1").style.display="block";
+            document.getElementById("img2").style.display="block";
+            document.getElementById("img3").style.display="none";
+            document.getElementById("img4").style.display="none";
+            document.getElementById("img5").style.display="none";
+            break;
+        case(1):
+            document.getElementById("img1").style.display="block";
+            document.getElementById("img2").style.display="block";
+            document.getElementById("img3").style.display="none";
+            document.getElementById("img4").style.display="none";
+            document.getElementById("img5").style.display="none";
+            break;
+        case(2):
+            document.getElementById("img1").style.display="block";
+            document.getElementById("img2").style.display="block";
+            document.getElementById("img3").style.display="block";
+            document.getElementById("img4").style.display="none";
+            document.getElementById("img5").style.display="none";
+            break;
+        case(3):
+            document.getElementById("img1").style.display="block";
+            document.getElementById("img2").style.display="block";
+            document.getElementById("img3").style.display="block";
+            document.getElementById("img4").style.display="none";
+            document.getElementById("img5").style.display="none";
+            break;
+        case(4):
+            document.getElementById("img1").style.display="block";
+            document.getElementById("img2").style.display="block";
+            document.getElementById("img3").style.display="block";
+            document.getElementById("img4").style.display="block";
+            document.getElementById("img5").style.display="none";
+            break;
+        case(5):
+            document.getElementById("img1").style.display="block";
+            document.getElementById("img2").style.display="block";
+            document.getElementById("img3").style.display="block";
+            document.getElementById("img4").style.display="block";
+            document.getElementById("img5").style.display="block";
+            break;
+    }
 };
 
 // główny generator statusów
@@ -124,8 +183,12 @@ var generator = function () {
         losjestem = losujCos(jestemMax),
         czescMax = czesc.length,
         losczesc = losujCos(czescMax),
+        duchMax = duch.length,
+        losduch = losujCos(duchMax),
+        ziemiaMax = ziemia.length,
+        losziemia = losujCos(ziemiaMax),
         // losuj z liczby case'ów - 1
-        coBedzie = losujCos(6);
+        coBedzie = losujCos(7);
     switch (coBedzie) {
     case 0:
         status = robie[losrobie] + " " + jakco[losjakco];
@@ -144,6 +207,9 @@ var generator = function () {
         break;
         case 5:
         status = jestem[losjestem] + " " + jakco[losjakco];
+        break;
+        case 6:
+        status = "niech zstompi " + duch[losduch] + " twuj i odnowi oblicze tej " + ziemia[losziemia];
         break;
     }
     $("#generator").html(status);
