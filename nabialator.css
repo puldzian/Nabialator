@@ -43,7 +43,7 @@ html {height:100%;} body {height:100%;line-height:1;} ol, ul {list-style: none;}
     left:100px;
     position:absolute;
     text-transform: uppercase;
-    top:400px;
+    top:350px;
 }
 #img1, #img2, #img3, #img4, #img5 {
     background-size: contain;
