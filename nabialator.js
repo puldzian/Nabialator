@@ -272,7 +272,7 @@ var generator = function () {
         status = nazywamsie[losnazywamsie] + " " + duch[losduch];
         break;
         case 10:
-        status = czesc[losczesc];
+        status = uwaga[losuwaga] + " " + jedzenie[losjedzenie] + " " + wpada[loswpada] + " do " + ziemia[losziemia];
         break;
         case 11:
         status = jestem[losjestem] + " " + naczym[losnaczym];
@@ -312,9 +312,6 @@ var generator = function () {
         break;
         case 23:
         status = duch[losduch] + " " + lezy[loslezy] + " " + naczym[losnaczym];
-        break;
-        case 24:
-        status = uwaga[losuwaga] + " " + jedzenie[losjedzenie] + " " + wpada[loswpada] + " do " + ziemia[losziemia];
         break;
     }
     $("#generator").html(status);
