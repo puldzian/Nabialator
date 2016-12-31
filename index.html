@@ -8,6 +8,7 @@
     <!-- <script src='https://code.responsivevoice.org/responsivevoice.js'></script> -->
     <script src="mespeak.js"></script>
     <script src="nabialator.js"></script>
+    <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <div id="img5"></div>
         <div id="intro">nabialator</div>
         <div id="introsub">zrobił <a href="http://puldzian.net" target="_blank">puldzian</a> a pomogli mu troche onak i podgórni. <a href="http://ść-ch.pl"  target="_blank">rozdzielczość chleba</a> życzy ci wielu miłych chwil</div>
-        <div id="start" onclick="nabialator()"><a href="#">zaczynajmy seans</a></div>
+        <div id="start" onclick="nabialator(); MIDIjs.play('midi/aroundtheworld.mid');"><a href="#">zaczynajmy seans</a></div>
     </div>
 
 </body>

@@ -322,13 +322,17 @@ var powiedz = function (status) {
     meSpeak.speak(status, {speed: 130});
 }
 
+var uruchamiacz = function () {
+    nabialator();
+}
+
 // funcja główna
 var nabialator = function () {
         // wygas scene
         document.getElementById("intro").style.display="none";
         document.getElementById("introsub").style.display="none";
         document.getElementById("start").style.display="none";
-        // zmien tlo
+        // włącz muzyke
         // zmien status
         generator();
         // zmien obrazki
